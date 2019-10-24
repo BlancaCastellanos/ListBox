@@ -7,18 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="lstColores" HorizontalAlignment="Left" Height="352" Margin="26,31,0,0" VerticalAlignment="Top" Width="190">
+        <ListBox x:Name="lstColores" HorizontalAlignment="Left" Height="380" Margin="24,19,0,0" VerticalAlignment="Top" Width="197">
+            <!--ListBoxItem>Opción 1</>
+            <ListBoxItem>Opción 2</ListBoxItem>
+            <ListBoxItem>Opción 3</ListBoxItem-->
 
         </ListBox>
-        <Button x:Name="btnagregar" Content="Nuevo Color" HorizontalAlignment="Left" Margin="465,61,0,0" VerticalAlignment="Top" Width="75" Click="Btnagregar_Click" RenderTransformOrigin="0.529,-0.383"/>
-        <TextBox x:Name="txtColor" HorizontalAlignment="Left" Height="23" Margin="284,55,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtHexadecimal" HorizontalAlignment="Left" Height="23" Margin="284,125,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtRGB" HorizontalAlignment="Left" Height="23" Margin="284,198,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="284,31,0,0" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Margin="284,101,0,0" TextWrapping="Wrap" Text="Hexadecimal:" VerticalAlignment="Top" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Margin="284,174,0,0" TextWrapping="Wrap" Text="RGB:" VerticalAlignment="Top" FontSize="14"/>
-
-
+        <TextBox x:Name="txtbox1" HorizontalAlignment="Left" Height="23" Margin="245,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnNuevoColor" Content="Nuevo color" HorizontalAlignment="Left" Margin="431,46,0,0" VerticalAlignment="Top" Width="94" Click="btnNuevoColor_Click" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="245,25,0,0" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtbox2" HorizontalAlignment="Left" Height="23" Margin="245,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="245,88,0,0" TextWrapping="Wrap" Text="Hexadecimal:" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtbox3" HorizontalAlignment="Left" Height="23" Margin="245,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="245,152,0,0" TextWrapping="Wrap" Text="RGB:" VerticalAlignment="Top" FontSize="14"/>
 
     </Grid>
 </Window>

@@ -20,34 +20,28 @@ namespace ListBox
     /// Lógica de interacción para MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-
     {
-
         ObservableCollection<Color> Colores = new ObservableCollection<Color>();
         public MainWindow()
         {
             InitializeComponent();
             Colores.Add(new Color("Rojo", "#FF0000", "(255,0,0)"));
-            Colores.Add(new Color("Verde", "#00FF00", "(255,0,0)"));
-            Colores.Add(new Color("Azul", "#0000FF", "(255,0,0)"));
+            Colores.Add(new Color("Verde", "#00FF00", "(0,255,0)"));
+            Colores.Add(new Color("Azul", "#0000FF", "(0,0,255)"));
+
+            lstColores.ItemsSource = Colores;
 
         }
 
-        private void Btnagregar_Click(object sender, RoutedEventArgs e)
+        private void btnNuevoColor_Click(object sender, RoutedEventArgs e)
         {
-            /*Colores.Add(txtColor.Text);
-            txtColor.Text = "";*/
+            /*Colores.Add(txtbox1.Text);
+            txtbox1.Text = "";*/
 
-
-        }
-
-        private void TxtHexadecimal_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void TxtRGB_TextChanged(object sender, TextChangedEventArgs e)
-        {
+            Colores.Add(new Color(txtbox1.Text, txtbox2.Text, txtbox3.Text));
+            txtbox1.Text = "";
+            txtbox2.Text = "";
+            txtbox3.Text = "";
 
         }
     }
