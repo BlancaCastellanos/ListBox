@@ -10,8 +10,15 @@
         <ListBox x:Name="lstColores" HorizontalAlignment="Left" Height="352" Margin="26,31,0,0" VerticalAlignment="Top" Width="190">
 
         </ListBox>
-        <Button x:Name="btnagregar" Content="Agregar" HorizontalAlignment="Left" Margin="329,92,0,0" VerticalAlignment="Top" Width="75" Click="Btnagregar_Click"/>
-        <TextBox x:Name="txtColor" HorizontalAlignment="Left" Height="23" Margin="284,31,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnagregar" Content="Nuevo Color" HorizontalAlignment="Left" Margin="465,61,0,0" VerticalAlignment="Top" Width="75" Click="Btnagregar_Click" RenderTransformOrigin="0.529,-0.383"/>
+        <TextBox x:Name="txtColor" HorizontalAlignment="Left" Height="23" Margin="284,55,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtHexadecimal" HorizontalAlignment="Left" Height="23" Margin="284,125,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtRGB" HorizontalAlignment="Left" Height="23" Margin="284,198,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284,31,0,0" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284,101,0,0" TextWrapping="Wrap" Text="Hexadecimal:" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284,174,0,0" TextWrapping="Wrap" Text="RGB:" VerticalAlignment="Top" FontSize="14"/>
+
+
 
     </Grid>
 </Window>
